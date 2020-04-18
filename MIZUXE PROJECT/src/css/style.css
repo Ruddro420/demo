@@ -1,0 +1,23 @@
+.card:hover {
+  background: #3292a6;
+  color: #fff; }
+ 
+
+
+
+  .nav-link:hover {
+    background: #3292a6;
+    color: #fff;
+  border-radius: 10px;
+  
+  }
+
+
+#authors-section .fa {
+
+    font-size: 30px;
+   color: rgb(69, 94, 177); 
+   
+    padding: 20px;
+
+}
