@@ -26,25 +26,14 @@ body{
 }
 
 #home-section{
-
-    background: url("img/5.jpeg");
-    min-height: 250px;
+    
+    background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(img/5.jpeg);
+    padding: 2rem 0rem;
     background-size: cover;
     background-attachment: fixed;
-    position: relative;
     background-repeat: no-repeat;
 }
- #home-section .overplay{
 
-    background: gray;
-    position: absolute;
-    background: rgba(0, 0, 0, 0.7);
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-
-}
 
 
 .rounded{
