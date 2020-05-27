@@ -28,25 +28,39 @@ $(window).scroll(function(){
 
 $(document).ready(function(){
 
-
-$(".js--service").waypoint(function(direction){
-
-    if(direction == "down"){
-      $("nav").addClass("sticky");
-
+  //Click NavBar
+  $('.navbar-collapse a').click(function () {
+    $(".navbar-collapse").collapse('hide');
+  });
+  
+  //Sticky Bar
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 100) {
+      $('.menu').addClass("sticky");
     }
-    else
-    {
-      $("nav").removeClass("sticky");
-
+    else {
+      $('.menu').removeClass("sticky");
     }
+  });
+  //Smooth Scrool
+  $("a").on('click', function (event) {
 
-});
+    if (this.hash !== "") {
+      event.preventDefault();
+
+      var hash = this.hash;
+      $('html,body').animate({
+        scrollTop: $(hash).offset().top
+      }, 1000, function () {
+        window.location.hash = hash;
+      });
+    }
+  });
 
 
 
 
-
+//MIx IT UP
 
     var mixer = mixitup('.prt');
 
